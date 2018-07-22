@@ -10,7 +10,7 @@ endif(WIN32)
 aux_source_directory(src LUA_SOURCES)
 list(REMOVE_ITEM LUA_SOURCES "src/lua.c" "src/luac.c")
 
-add_library(lualib SHARED ${LUA_SOURCES})
+add_library(lualib ${LUA_SOURCES})
 
 add_executable(lua src/lua.c)
 target_link_libraries(lua lualib)
@@ -23,4 +23,4 @@ if(UNIX AND NOT APPLE)
     target_link_libraries(luac m)
 endif()
 
-set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+# set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)

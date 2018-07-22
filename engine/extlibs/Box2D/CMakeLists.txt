@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(Box2D)
+project(box2D)
 
 include_directories(Include)
 
@@ -28,10 +28,10 @@ source_group(Dynamics\\Contacts Dynamics/Contacts/*)
 source_group(Dynamics\\Joints Dynamics/Joints/*)
 source_group(Rope Rope/*)
 
-add_library(Box2D 
+add_library(box2Dlib
 	${Collision}
 	${Common}
 	${Dynamics}
 	${Rope})
 
-set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+# set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
