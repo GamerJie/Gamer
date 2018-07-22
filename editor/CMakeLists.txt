@@ -11,6 +11,6 @@ include_directories(${Engine_Include})
 
 file(GLOB root src/*)
 
-add_executable(Editor ${root})
+add_executable(editor ${root})
 
-target_link_libraries(Editor engine)
+target_link_libraries(editor engine)

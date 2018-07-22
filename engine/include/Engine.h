@@ -2,15 +2,13 @@
 // Created by Jie on 2018/7/23.
 //
 
-#ifndef PROJECT_DLL_H
-#define PROJECT_DLL_H
+#ifndef ENGINE_H
+#define ENGINE_H
 
 #ifdef EngineAPI
-#define EngineAPI __declspec(dllexport)
+    #define EngineAPI __declspec(dllexport)
 #else
-#define EngineAPI __declspec(dllimport)
-#endif
+    #define EngineAPI __declspec(dllimport)
+#endif;
 
-void EngineAPI Hello();
-
-#endif //PROJECT_DLL_H
+#endif //ENGINE_H

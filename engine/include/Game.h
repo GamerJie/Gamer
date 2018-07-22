@@ -2,8 +2,8 @@
 // Created by Jie on 2018/7/23.
 //
 
-#ifndef PROJECT_GAME_H
-#define PROJECT_GAME_H
+#ifndef GAME_H
+#define GAME_H
 
 #include "Engine.h"
 
@@ -21,4 +21,4 @@ private:
     sf::RenderWindow* mWindow;
 };
 
-#endif //PROJECT_GAME_H
+#endif //GAME_H
